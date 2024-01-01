@@ -1,0 +1,61 @@
+.navbar .collapsing .navbar-toggler{
+  pointer-events: none;
+}
+.navbar .nav-item .nav-link-icon.nav-link i{
+  margin-right: 4px;
+}
+.notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  background-color: red;
+  border-radius: 50%;
+}
+.dropDown{
+  position: absolute;
+  z-index: 9;
+  padding: 10px;
+  top: 63px;
+  right: 57px;
+  width: 600px;
+  max-height: 66vh; 
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+ & hr{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  }
+  @media (max-width:700px) {
+    width: 460px;
+  }
+  @media (max-width:560px) {
+    width: 350px;
+    max-height: 100vh;
+  }
+  @media (max-width:450px) {
+    width: 240px;
+    max-height: 100vh;
+  }
+}
+.nav-notification{
+    color: #212529;
+    background-color: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+
+}

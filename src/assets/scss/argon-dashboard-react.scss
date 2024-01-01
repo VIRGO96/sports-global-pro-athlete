@@ -1,0 +1,794 @@
+//Custmoize Theme
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+$theme-colors: (
+  "primary": #2e7bf6,
+  "dark": #000000,
+  "dark-1": #160a3d,
+  "secondary": #fafafa,
+  "table-color": #cfd5ea,
+  "ScrollSign-Color": #115780,
+);
+.pointer {
+  cursor: pointer;
+}
+.text-white-1 {
+  color: #fff;
+}
+.bg-white-1 {
+  background-color: #fff;
+}
+.text-dark-1 {
+  color: #000000;
+}
+.bg-dark-1 {
+  background-color: #000000;
+}
+.text-gray-1 {
+  color: #e5e5e5;
+}
+.bg-gray-1 {
+  background-color: #e5e5e5;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.custom-border-left {
+  border-left: 2px solid black !important;
+}
+.logo {
+  height: auto;
+}
+.notice__board {
+  font-weight: bold;
+  position: absolute;
+  z-index: 1 !important;
+  padding: 10px 25px;
+}
+.auth-right {
+  height: 100vh;
+  overflow: auto;
+}
+.auth-button {
+  border-radius: 100px !important;
+  background-color: #2e7bf6 !important;
+  height: 60px !important;
+  border: none !important;
+  color: #fff !important;
+  width: 75% !important;
+}
+.custom-input {
+  border: none !important;
+  font-family: "Poppins";
+  font-size: 18px !important;
+  border-radius: 0px !important;
+  border-bottom: 1.5px solid #d0d0d0 !important;
+  // width: 75% !important;
+}
+.custom-input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9f9f9f;
+}
+.auth-card {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.auth-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.auth-label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.custom-label {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9f9f9f;
+}
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  background: #2e7bf6;
+  border: 1.5px solid #9f9f9f !important;
+  box-sizing: border-box !important;
+  border-radius: 50% !important;
+}
+.custom-checkbox-label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #9f9f9f;
+}
+.price-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 34px;
+  color: #000000;
+}
+.payment-card-logo {
+  border: 1px solid #2e7bf6;
+}
+.confirmation-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  color: #8b8b8b;
+}
+.custom-btn {
+  border: 2px solid #2e7bf6 !important;
+  box-sizing: border-box !important;
+  border-radius: 12px !important;
+  color: #2e7bf6 !important;
+  background-color: transparent !important;
+}
+.custom-btn:hover {
+  border: none !important;
+  color: white !important;
+  background-color: #2e7bf6 !important;
+}
+.custom-card-input {
+  height: 60px;
+  background: #f8f9fc;
+  border-radius: 15px !important;
+}
+.custom-card-input input {
+  background: none !important;
+  border: none !important;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  background: #f8f9fc !important;
+  color: #8b8b8b;
+}
+.custom-card-input input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #8b8b8b;
+}
+.custom-cvc-input {
+  background: none !important;
+  border: none !important;
+  border-radius: 15px !important;
+  height: 60px !important;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  background: #f8f9fc !important;
+  color: #8b8b8b;
+}
+.boldClass {
+  font-weight: bold;
+  // color: white;
+}
+.custom-cvc-input input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #8b8b8b;
+}
+.auth-desc-title {
+  margin-left: 40px;
+  margin-top: 75px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+}
+.auth-desc-subtitle {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.auth-desc-points {
+  margin-left: 40px;
+  margin-right: 50px;
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  opacity: 0.75;
+}
+.ca-desc-points {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+.textWrap{
+  word-wrap: break-word;
+}
+@media (max-width: 480px) {
+  .auth-desc-title {
+    margin-left: 10px;
+    font-size: 29px !important;
+  }
+  .auth-desc-subtitle {
+    margin-left: 10px;
+  }
+  .auth-desc-points {
+    margin-left: 10px;
+  }
+  .auth-button {
+    width: 100% !important;
+  }
+  .boldClass {
+    color: inherit;
+  }
+}
+.dashboard-card {
+  position: relative;
+  // width: 280px;
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+.dashboard-card:hover {
+  background: #2e7bf6;
+}
+.dashboard-card:hover p {
+  color: white !important;
+}
+.dashboard-card:hover button {
+  color: #2e7bf6 !important;
+  background-color: white !important;
+}
+.dashboard-card-numbers {
+  position: absolute;
+  // margin-left: auto;
+  // margin-right: auto;
+  left: 0;
+  right: 0;
+  // margin-top: 50px;
+  margin-top: 82px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 81px;
+  text-align: center;
+  color: #2e7bf6;
+}
+.dashboard-card-title {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  left: 0;
+  right: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.dashboard-card-earning-title {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  left: 0;
+  right: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  @media screen and(max-width:400px) {
+    font-size: 18px;
+  }
+}
+.btn-withdraw {
+  background-color: #2e7bf6 !important;
+  margin-top: 130px;
+  border: none !important;
+  border-radius: 12px !important;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: white !important;
+}
+.card {
+  box-shadow: 0px 3px 0px #e7e7f3 !important;
+  border-radius: 15px !important;
+}
+.card-title {
+  font-family: "Poppins" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  color: #160a3d !important;
+}
+.custom-primary-btn {
+  border: none !important;
+  border-radius: 12px !important;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.custom-table-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 27px;
+  color: #160a3d;
+}
+.custom-heading {
+  border: none !important;
+  text-transform: none !important;
+}
+.custom-table-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9f9f9f;
+}
+.custom-table-body-top-right {
+  border-top-right-radius: 12px !important;
+}
+.custom-table-body-top-left {
+  border-top-left-radius: 12px !important;
+}
+.custom-table-body {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0px 3px 0px #e7e7f3;
+  border-radius: 15px 15px 0px 0px !important;
+}
+.complaint-card {
+  // position: absolute;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+}
+.complaint-form {
+  padding: 80px;
+}
+.profile-form {
+  padding: 20px 30px;
+}
+.complaint-input {
+  border: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+.complaint-input::placeholder {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+.withdrawl-input {
+  border: 1.5px solid #acacac;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: #939393;
+}
+.withdrawl-input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  color: #939393;
+}
+.sportField {
+  height: calc(1.5em + 1.25rem + 2px);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 48%;
+  color: #8898aa;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #cad1d7;
+  border-radius: 0.375rem;
+  box-shadow: none;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.marqueeTagset {
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 23px;
+  z-index: 1;
+  background-color: white;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.shopMainOuter {
+  position: relative;
+  .shopBtn {
+    position: absolute;
+    top: 300px;
+    right: 95px;
+    @media (max-width: 320px) {
+      top: 180px !important;
+    }
+    @media (max-width: 424px) and(min-width:321px) {
+      top: 210px !important;
+      right: 118px !important;
+    }
+    @media (max-width: 600px) and (min-width: 425px) {
+      top: 235px !important;
+      right: 150px !important;
+    }
+  }
+}
+.flexSet {
+  display: flex;
+  align-items: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+.flexBtnPoster {
+  display: flex;
+  justify-content: end;
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
+}
+.card-img-overlay {
+  background-color: rgba(#000, 0.7);
+}
+.backBtn {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.inputSet {
+  border: none !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42) !important;
+  padding-left: 0px !important;
+  font-size: 16px;
+  color: black !important;
+  font-weight: 400;
+}
+.submitBtn {
+  border-radius: 3px 13px 3px 13px !important;
+}
+.dollarSignOuter {
+  position: relative;
+  .dollarSign {
+    position: absolute;
+    top: 13px;
+    left: 5px;
+  }
+}
+.AggrementOuter {
+  p {
+    font-weight: 400 !important;
+  }
+}
+// Styling For INstructions Page
+
+.txtClr {
+  color: black !important;
+}
+.instructionHeading {
+  font-size: 20px !important;
+  font-weight: 500;
+}
+.instructionHeadingH2 {
+  font-size: 18px !important;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.instructionPText {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.linkText {
+  color: #2e7bf6;
+  text-decoration: underline;
+}
+.outerDiv {
+  padding-left: 15%;
+}
+.TopModal {
+  & .modal-content {
+    background: transparent !important;
+  }
+}
+.tutorialBtn {
+  box-shadow: none !important;
+  cursor: default !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+  &:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  &:active {
+    background-color: #f5365c !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .outerDiv {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 607px) {
+  .complaint-form {
+    padding: 30px;
+  }
+  .profile-form {
+    padding: 10px 15px;
+  }
+}
+.edit-password-info {
+  font-family: "Poppins";
+  font-style: normal;
+  // font-weight: 600;
+  font-size: 18px;
+  line-height: 37px;
+  color: #9f9f9f;
+  border: none !important;
+  @media (max-width:365px) {
+    font-size: 14px;
+  }
+}
+.request-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.PrintCard {
+  padding: 15px 5px;
+  width: 100%;
+  border: 2px dashed black;
+}
+.outerScan {
+  width: 50%;
+  margin-left: 100px;
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (max-device-width: 1023px) {
+  .PrintCard {
+    width: 100% !important;
+  }
+  .hideImg {
+    display: none !important;
+  }
+}
+.request-form-input {
+  border: none !important;
+  font-family: "Poppins";
+  border-radius: 0px !important;
+  color: #000000 !important;
+  border-bottom: 1.5px solid #000000 !important;
+  width: 75% !important;
+}
+.nav-link {
+  color: white !important;
+}
+.nav-link.active {
+  color: white !important;
+}
+@media (max-width: 767.98px) {
+  .logo {
+    width: 80%;
+  }
+  .auth-card {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .auth-button {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 752px) {
+  // .nav-bottom {
+  // 	position: absolute;
+  // 	width: 100%;
+  // 	bottom: 10px;
+  // }
+  .custom-sidebar {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+  }
+}
+@media (max-width: 532px) {
+  .custom-card-input {
+    width: 100% !important;
+  }
+  .custom-input {
+    width: 100% !important;
+  }
+}
+
+.teamWorkTxt {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+
+.threeWaysImg {
+  justify-content: end;
+}
+
+.verifyBox {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0px 10px;
+  // border: 1px solid black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+@media (max-width: 425px) {
+  .threeWaysImg {
+    justify-content: center;
+  }
+}
+// Core
+
+@import "argon-dashboard/custom/functions";
+@import "argon-dashboard/custom/variables";
+@import "argon-dashboard/custom/mixins";
+
+// bootstrap (4.6.0) components
+
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+// Argon utilities and components
+
+@import "argon-dashboard/custom/reboot";
+@import "argon-dashboard/custom/utilities";
+@import "argon-dashboard/custom/components";
+
+// Vendor (Plugins)
+
+@import "argon-dashboard/custom/vendors";
+
+// Docs components
+
+@import "argon-dashboard/docs/variables";
+@import "argon-dashboard/docs/nav";
+@import "argon-dashboard/docs/clipboard-js";
+@import "argon-dashboard/docs/component-examples";
+@import "argon-dashboard/docs/prism";
+@import "argon-dashboard/docs/content";
+@import "argon-dashboard/docs/sidebar";
+@import "argon-dashboard/docs/footer";
+
+// React Differences
+@import "react/react-differences";
